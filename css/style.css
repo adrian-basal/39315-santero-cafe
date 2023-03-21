@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+COLORES
+Dorado - #9B7D49
+
+TIPOGRAFÍA
+Textos principales - Barlow
+Textos secundarios - Pontano Sans
+ */
+
+ /* H1 - H4 */
+h1{
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #ffffff
+}
+
+h3{
+    font-family: 'Barlow', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+ /*////// HEAD //////*/
+header{
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.logo{
+    width: 270px;
+    height: 60px;
+}
+
+.nav-bar{
+    list-style: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.login-cart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.login-cart li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*////// MAIN //////*/
+
+/* HOME (Main)*/
+.main-home{
+    font-family: 'arial';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    gap: 10px;
+}
+
+/* Fondo Main Café */
+main {
+    background-image: url(../assets/img/fdo_main.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.slideshow{
+    background-color:black;
+    background-image: url(../assets/img/slideshow/slide-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-texto{
+    text-align: center;
+    width: 100%;
+    padding: 15%;
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.slide-texto1{
+    font-size: 40px;
+}
+
+.slide-texto2{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+/* Flechas para slideshow */
+.selec-slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/* NOSOTOS MAIN*/
+.main-nosotros{
+    font-family: 'arial';
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    gap: 40px
+}
+
+.cabezal-nosotros{
+    background-color:black;
+    background-image: url(../assets/img/cabezales/cabezal_nosotros.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+
+/* TIENDA (Main)*/
+.main-tienda{
+    font-family: 'arial';
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabezal-tienda{
+    background-color:black;
+    background-image: url(../assets/img/cabezales/cabezal_tienda.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+
+/* LOCALES (Main)*/
+.main-locales{
+    font-family: 'arial';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    gap: 20px
+}
+
+.cabezal-locales{
+    background-color:black;
+    background-image: url(../assets/img/cabezales/cabezal_locales.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+
+/* CONTACTO (Main)*/
+.main-contacto{
+    font-family: 'arial';
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    gap: 80px
+}
+
+.cabezal-contacto{
+    background-color:black;
+    background-image: url(../assets/img/cabezales/cabezal_contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+
+/* Propiedades Cabezales */
+.slideshow-texto{
+    text-align: center;
+    width: 100%;
+    padding: 15%;
+    
+}
+
+.cabezal-sec-texto{
+    text-align: left;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*/////// FOOTER //////*/
+
+.footer-titulos{
+    font-weight: bold;
+    color: #9B7D49;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.propiedades-footer{
+    font-family: 'Barlow', sans-serif;
+    background-color: rgba(128, 128, 128, 0.034);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.propiedades-footer li{
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.sucursales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.horario{
+    display: flex;
+    flex-direction: column;
+}
+
+.reservas{
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 7px;
+}
+
+.pago{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.sociales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+    gap: 10px;
+}
+
+.copyright{
+    font-family: 'Barlow', sans-serif;
+    padding: 7px;
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.copyright-mail{
+    color: #9B7D49;
+}
+
+
+@media (max-width: 768px) {
+    .main3 {
+      display: none;
+    }
+  }
