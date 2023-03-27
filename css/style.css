@@ -376,7 +376,54 @@ main {
   }
 
 
-/******* RESPONSIVE MOBILE *******/
+  /******* RESPONSIVE MOBILE *******/
+  @media (max-width: 425px) {
+    .main-home{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    header{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+    .logo img{
+        margin-left: 35px;
+        margin-top: 5px;
+        width: 75%;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .login-cart{
+        display: none;
+    }
+    .linea-menu{
+        display: none;
+    }
+    .slide-texto1{
+        font-size: 35px;
+        padding: 2%;
+    }
+    .slide-texto2{
+        font-size: 16px;
+    }
+    .selec-slide{
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        top:-130px;
+    }
+
+    .grid-container {
+      display: flex;
+    }
+  }
+
+/******* RESPONSIVE MOBILE 320px*******/
   @media (max-width: 320px) {
     .main-home{
         display: none;
