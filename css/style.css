@@ -378,6 +378,12 @@ main {
 
 /******* RESPONSIVE MOBILE *******/
   @media (max-width: 320px) {
+    .main-home{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
     header{
     height: 100px;
     align-items: center;
