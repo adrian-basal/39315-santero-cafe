@@ -244,7 +244,7 @@ main {
 .footer-titulos{
     font-weight: bold;
     color: #9B7D49;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -273,6 +273,10 @@ main {
 .horario{
     display: flex;
     flex-direction: column;
+}
+
+.suc-linea{
+    margin-left: 30px;
 }
 
 .reservas{
@@ -381,9 +385,47 @@ main {
     .main-home{
         display: none;
     }
+
     footer{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
+
+    .propiedades-footer{
+        flex-direction: column;
+        background-color: #00000007;
+        font-size: 15px;
+    }
+
+    .sucursales{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .horario{
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-titulos{
+        margin-right: 10px;
+    }
+
+    .suc-linea{
+        display:none
+    }
+
+    .reservas{
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    .pago{
+        margin-bottom: 10px;
+    }
+
     header{
     height: 100px;
     align-items: center;
@@ -429,8 +471,45 @@ main {
         display: none;
     }
     footer{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
+
+    .propiedades-footer{
+        flex-direction: column;
+        background-color: #00000007;
+        font-size: 15px;
+    }
+
+    .sucursales{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .horario{
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-titulos{
+        margin-right: 10px;
+    }
+
+    .suc-linea{
+        display:none
+    }
+
+    .reservas{
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    .pago{
+        margin-bottom: 10px;
+    }
+
     header{
     height: 100px;
     align-items: center;
