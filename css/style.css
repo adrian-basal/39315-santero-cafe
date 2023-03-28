@@ -380,7 +380,7 @@ main {
   }
 
 
-  /******* RESPONSIVE MOBILE *******/
+  /******* RESPONSIVE MOBILE 425px *******/
   @media (max-width: 425px) {
     .main-home{
         display: none;
