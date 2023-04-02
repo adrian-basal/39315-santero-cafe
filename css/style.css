@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -94,7 +93,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px 40px 0px 40px;
+    margin: 2rem 2rem 0rem 2rem;
 }
 
 /* Fondo Main Café */
@@ -128,6 +127,10 @@ main {
 .slide-texto2{
     font-weight: lighter;
     font-size: 20px;
+}
+
+.column3{
+    margin-left: 20px;
 }
 
 /* Flechas para slideshow */
@@ -238,6 +241,15 @@ main {
     flex-direction: column;
 }
 
+/* Container Main */
+.container {
+	display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
 
 /*/////// FOOTER //////*/
 
@@ -314,237 +326,289 @@ main {
     color: #9B7D49;
 }
 
-
-
-.grid-container {
-	display: grid;
-	grid-template-columns: 300px 300px auto;
-    grid-template-rows: auto auto auto;
-	grid-gap: 30px;
+/* ****** RESPONSIVE PC ****** */
+@media (max-width: 1024px) {
+/* Header (1024px) */
+header{
+    height: 80px;
+}
+.logo img{
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 70%;
+}
+.nav-bar{
+    gap: 15px;
+}
+.nav-bar li a{
+    font-size: 18px;
+}
+.login-cart{
+    padding-right: 15px;
+    gap: 10px;
+}
+.login-cart img{
+    margin-top: 3px;
     width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-template-areas: 
-        "grid-container";
+}    
+.login-cart li a{
+    font-size: 15px;
+}
+.linea-menu{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Main (1024px) */
+.slide-texto1{
+    font-size: 35px;
+}
+.slide-texto2{
+    font-size: 20px;
+}
+.selec-slide{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top:-200px;
+}
+.column3{
+    margin-left: 15px;
+}
+.main-nosotros{
+    flex-direction: column;
+    height: 100%;
+}
+.main-nosotros img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+/* Footer (1024px) */
+.propiedades-footer{
+    background-color: #00000007;
+    font-size: 15px;
+}
+.footer-titulos{
+    margin-right: 10px;
+}
+.sucursales{
+    justify-content: start;
+}
+.horario{
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.suc-linea{
+    display:none
+}
+.reservas{
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.pago{
+    margin-bottom: 10px;
+}
+.sociales{
+    margin-left: 20px;
+}
+.sociales .footer-titulos{
+    display: none;
+}
 }
 
 /* ****** RESPONSIVE TABLET ****** */
-  @media (max-width: 768px) {
-    header{
-        height: 80px;
-    }
-    .logo img{
-        margin-left: 30px;
-        margin-top: 15px;
-        width: 70%;
-    }
-    .nav-bar{
-        gap: 15px;
-    }
-    .nav-bar li a{
-        font-size: 18px;
-    }
-    .login-cart{
-        padding-right: 15px;
-        gap: 10px;
-    }
-    .login-cart img{
-        margin-top: 3px;
-        width: 100%;
-
-    }    
-    .login-cart li a{
-        font-size: 15px;
-
-    }
-    .linea-menu{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .slide-texto1{
-        font-size: 35px;
-    }
-    .slide-texto2{
-        font-size: 20px;
-    }
-    .selec-slide{
-        margin-left: 20px;
-        margin-right: 20px;
-        position: relative;
-        top:-160px;
-    }
-    
-    .grid-container {
-      display: flex;
-    }
-  }
-
-
-  /******* RESPONSIVE MOBILE 425px *******/
-  @media (max-width: 425px) {
-    .main-home{
-        display: none;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .propiedades-footer{
-        flex-direction: column;
-        background-color: #00000007;
-        font-size: 15px;
-    }
-
-    .sucursales{
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    .horario{
-        flex-direction: row;
-        justify-content: start;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .footer-titulos{
-        margin-right: 10px;
-    }
-
-    .suc-linea{
-        display:none
-    }
-
-    .reservas{
-        flex-direction: row;
-        justify-content: start;
-        margin-bottom: 10px;
-    }
-
-    .pago{
-        margin-bottom: 10px;
-    }
-
-    header{
-    height: 100px;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 768px) {
+/* Header (768px) */
+.selec-slide{
+    top:-160px;
+}
+/* Main (768px) */
+.container{
+    flex-wrap: wrap;
+}
+.column3{
+    margin-left: 0px;
+}
+.column3{
+    order: 1;
+}
+.column1{
+    order: 2;
+}
+.column2{
+    order: 2;
+}
+.main-locales{
+    flex-direction: column;
+    height:100%;
+}
+.main-contacto{
+    flex-direction: column;
+    height:100%;
+}
+.main-contacto img{
+    object-fit: cover;
+    width:100%;
+}
+.main-nosotros{
+    flex-direction: column;
+    height:100%;
+}
+/* Footer */
+footer{
+    flex-direction: column;
+}
+.propiedades-footer{
+    flex-direction: column;
+}
+.horario{
+    flex-direction: row;
+}
+.suc-linea{
+    display:none
+}
+.sociales .footer-titulos{
     display: flex;
-    }
-    .logo img{
-        margin-left: 35px;
-        margin-top: 5px;
-        width: 75%;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .login-cart{
-        display: none;
-    }
-    .linea-menu{
-        display: none;
-    }
-    .slide-texto1{
-        font-size: 35px;
-        padding: 2%;
-    }
-    .slide-texto2{
-        font-size: 16px;
-    }
-    .selec-slide{
-        margin-left: 10px;
-        margin-right: 10px;
-        position: relative;
-        top:-130px;
-    }
+}
+}
 
-    .grid-container {
-      display: flex;
-    }
-  }
+/******* RESPONSIVE MOBILE 425px *******/
+@media (max-width: 425px) {
+/* Header (425px) */
+header{
+height: 100px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.logo img{
+    margin-left: 35px;
+    margin-top: 5px;
+    width: 75%;
+}
+.nav-bar{
+    display: none;
+}
+.login-cart{
+    display: none;
+}
+.linea-menu{
+    display: none;
+}
+.slide-texto2{
+    font-size: 16px;
+}
+.selec-slide{
+    margin-left: 10px;
+    margin-right: 10px;
+    top:-130px;
+}
+/* Main (425px) */
+.container{
+    flex-direction: column;
+}
+.container img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.column3{
+    order: 1;
+}
+.column1{
+    order: 2;
+}
+.column2{
+    order: 3;
+}
+/* Footer (425px) */
+footer{
+    flex-direction: column;
+}
+.sucursales{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.horario{
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
 
 /******* RESPONSIVE MOBILE 320px*******/
-  @media (max-width: 320px) {
-    .main-home{
-        display: none;
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .propiedades-footer{
-        flex-direction: column;
-        background-color: #00000007;
-        font-size: 15px;
-    }
-
-    .sucursales{
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    .horario{
-        flex-direction: row;
-        justify-content: start;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .footer-titulos{
-        margin-right: 10px;
-    }
-
-    .suc-linea{
-        display:none
-    }
-
-    .reservas{
-        flex-direction: row;
-        justify-content: start;
-        margin-bottom: 10px;
-    }
-
-    .pago{
-        margin-bottom: 10px;
-    }
-
-    header{
+@media (max-width: 320px) {
+/* Header (320px) */
+header{
     height: 100px;
     align-items: center;
     justify-content: center;
+}
+.nav-bar{
+    display: none;
+}
+.login-cart{
+    display: none;
+}
+.linea-menu{
+    display: none;
+}
+.slide-texto1{
+    font-size: 30px;
+    padding: 5%;
+}
+.slide-texto2{
+    font-size: 16px;
+}
+.selec-slide{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top:-100px;
+}
+/* Main (320px) */  
+.container{
+    flex-direction: column;
+}
+.column3{
+    order: 1;
+}
+.column1{
+    order: 2;
+}
+.column2{
+    order: 3;
+}
+/* Footer (320px) */
+footer{
     display: flex;
-    }
-    .logo img{
-        margin-left: 35px;
-        margin-top: 5px;
-        width: 75%;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .login-cart{
-        display: none;
-    }
-    .linea-menu{
-        display: none;
-    }
-    .slide-texto1{
-        font-size: 30px;
-        padding: 5%;
-    }
-    .slide-texto2{
-        font-size: 16px;
-    }
-    .selec-slide{
-        margin-left: 10px;
-        margin-right: 10px;
-        position: relative;
-        top:-100px;
-    }
-
-    .grid-container {
-      display: flex;
-    }
-  }
+    flex-direction: column;
+}
+.propiedades-footer{
+    flex-direction: column;
+    background-color: #00000007;
+    font-size: 15px;
+}
+.footer-titulos{
+    margin-right: 10px;
+}
+.sucursales{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.horario{
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.suc-linea{
+    display:none
+}
+.pago{
+    margin-bottom: 10px;
+}
+}
