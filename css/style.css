@@ -46,25 +46,37 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    height: 100%;
+    padding: 20px;
 }
 
-.logo{
-    width: 270px;
-    height: 60px;
+
+header nav label{
+    display: none;
+} 
+header nav input{
+    appearance: none;
 }
 
-.nav-bar{
+nav{
     list-style: none;
+    gap: 30px;
+    text-transform: uppercase;
     display: flex;
+    align-items: center;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
     gap: 30px;
 }
 
-.nav-bar li a{
+nav label{
+    display: flex;
     color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .login-cart{
@@ -82,6 +94,20 @@ header{
     list-style: none;
 }
 
+nav li a{
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+
+/* 
+.logo{
+    width: 270px;
+    height: 60px;
+}
+ */
 
 /*////// MAIN //////*/
 
@@ -143,7 +169,7 @@ main {
 }
 
 
-/* NOSOTOS MAIN*/
+/* NOSOTROS MAIN*/
 .main-nosotros{
     font-family: 'arial';
     display: flex;
@@ -327,18 +353,15 @@ main {
 /* ****** RESPONSIVE PC ****** */
 @media (max-width: 1024px) {
 /* Header (1024px) */
-header{
-    height: 80px;
-}
 .logo img{
-    margin-left: 30px;
     margin-top: 15px;
     width: 70%;
 }
+
 .nav-bar{
     gap: 15px;
 }
-.nav-bar li a{
+.nav ul li{
     font-size: 18px;
 }
 .login-cart{
@@ -419,8 +442,17 @@ header{
 /* ****** RESPONSIVE TABLET ****** */
 @media (max-width: 768px) {
 /* Header (768px) */
+nav{
+    gap: 0px;
+}
 .selec-slide{
     top:-160px;
+}
+nav ul a{
+    font-size: 18px; 
+}
+.menu ul{
+    gap: 15px;
 }
 /* Main (768px) */
 .container{
@@ -476,19 +508,11 @@ footer{
 @media (max-width: 425px) {
 /* Header (425px) */
 header{
-height: 100px;
-align-items: center;
-justify-content: center;
-display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
-.logo img{
-    margin-left: 35px;
-    margin-top: 5px;
-    width: 75%;
-}
-.nav-bar{
-    display: none;
-}
+
 .login-cart{
     display: none;
 }
@@ -535,18 +559,57 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* Menú responsive (425px) */
+.logo{
+    margin-left: 100px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+nav .menu{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.menu ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav #toggle:checked ~ .menu{
+    height: 100%;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.menu ul{
+    list-style: none;
+    gap: 5px;
+}
+nav li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header nav label{
+    display:flex;
+}
+header nav label{
+    position: relative;
+    top:-55px;
+    margin-left: 15px;
+}
+nav{
+    flex-wrap: wrap;
+    gap: 0px;
+    margin-bottom: -40px;
+}
 }
 
 /******* RESPONSIVE MOBILE 320px*******/
 @media (max-width: 320px) {
 /* Header (320px) */
 header{
-    height: 100px;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-}
-.nav-bar{
-    display: none;
 }
 .login-cart{
     display: none;
@@ -608,5 +671,49 @@ footer{
 }
 .pago{
     margin-bottom: 10px;
+}
+/* Menú responsive (320px) */
+.logo{
+    margin-left: 70px;
+}
+.logo img{
+    width: 80%;
+}
+nav .menu{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.menu ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+nav #toggle:checked ~ .menu{
+    height: 100%;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.menu ul{
+    list-style: none;
+    gap: 5px;
+}
+nav li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header nav label{
+    display:flex;
+}
+header nav label{
+    position: relative;
+    top:-55px;
+    margin-left: 15px;
+}
+nav{
+    flex-wrap: wrap;
+    gap: 0px;
+    margin-bottom: -40px;
 }
 }
