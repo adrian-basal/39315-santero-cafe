@@ -259,13 +259,23 @@ main {
 
 
 /* CONTACTO (Main)*/
+
+form {
+    margin-top: 20px;
+}
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+}
+
 .main-contacto{
     font-family: 'arial';
     display: flex;
     height: 500px;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px;
+    margin: 40px 40px 20px 20px;
     gap: 80px
 }
 
@@ -295,7 +305,7 @@ main {
 }
 
 /* Container Main */
-.container {
+.container-main {
 	display: flex;
     width: 100%;
     align-items: center;
@@ -492,7 +502,7 @@ nav ul a{
     grid-template-columns: repeat(2, 1fr);
     height: auto;
   }
-.container{
+.container-main{
     flex-wrap: wrap;
 }
 .column3{
@@ -567,10 +577,10 @@ header{
 .tienda-grids {
         grid-template-columns: 1fr;
       }
-.container{
+.container-main{
     flex-direction: column;
 }
-.container img{
+.container-main img{
     object-fit: cover;
     width:100%;
     height:100%;
@@ -681,7 +691,7 @@ header{
     contain: content;
 }
 
-.container{
+.container-main{
     flex-direction: column;
 }
 .column3{
