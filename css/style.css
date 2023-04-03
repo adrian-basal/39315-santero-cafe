@@ -355,7 +355,7 @@ main {
 /* Header (1024px) */
 .logo img{
     margin-top: 15px;
-    width: 70%;
+    width: 85%;
 }
 
 .nav-bar{
@@ -442,6 +442,10 @@ main {
 /* ****** RESPONSIVE TABLET ****** */
 @media (max-width: 768px) {
 /* Header (768px) */
+.logo img{
+    margin-top: 15px;
+    width: 75%;
+}
 nav{
     gap: 0px;
 }
@@ -512,7 +516,6 @@ header{
     align-items: center;
     justify-content: center;
 }
-
 .login-cart{
     display: none;
 }
