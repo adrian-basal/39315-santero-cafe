@@ -315,6 +315,9 @@ input[type="submit"] {
 
 
 /*/////// FOOTER //////*/
+footer p{
+    margin-bottom: 0rem;
+}
 
 .footer-titulos{
     font-weight: bold;
