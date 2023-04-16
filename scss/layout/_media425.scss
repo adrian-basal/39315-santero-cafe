@@ -1,0 +1,95 @@
+/******* RESPONSIVE MOBILE 425px *******/
+@media (max-width: 425px) {
+
+    /* Header (425px) */
+    .login-cart {
+        display: none;
+    }
+
+    .linea-menu {
+        display: none;
+    }
+
+    .selec-slide {
+        top: -130px;
+    }
+
+    /* Main (425px) */
+    .tienda-grids {
+        grid-template-columns: 1fr;
+    }
+
+    .container-main {
+        flex-direction: column;
+    }
+
+    .container-main img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer (425px) */
+    .sucursales {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .horario {
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Menú responsive (425px) */
+    .logo {
+        margin-left: 100px;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    nav #toggle:checked~.menu {
+        height: 100%;
+        align-items: end;
+        margin-bottom: 40px;
+    }
+
+    .menu ul {
+        list-style: none;
+        gap: 5px;
+    }
+
+    nav li a {
+        font-size: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    header nav label {
+        display: flex;
+    }
+
+    header nav label {
+        position: relative;
+        top: -55px;
+        margin-left: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 0px;
+        margin-bottom: -40px;
+    }
+}

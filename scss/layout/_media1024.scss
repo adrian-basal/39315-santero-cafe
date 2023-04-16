@@ -1,0 +1,109 @@
+/* ****** RESPONSIVE PC ****** */
+@media (max-width: 1024px) {
+
+    /* Header (1024px) */
+    .logo img {
+        margin-top: 15px;
+        width: 85%;
+    }
+
+    .nav-bar {
+        gap: 15px;
+    }
+
+    .nav ul li {
+        font-size: 18px;
+    }
+
+    .login-cart {
+        padding-right: 15px;
+        gap: 10px;
+    }
+
+    .login-cart img {
+        margin-top: 3px;
+        width: 100%;
+    }
+
+    .login-cart li a {
+        font-size: 15px;
+    }
+
+    .linea-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Main (1024px) */
+    .slide-texto1 {
+        font-size: 35px;
+    }
+
+    .slide-texto2 {
+        font-size: 20px;
+    }
+
+    .selec-slide {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        top: -200px;
+    }
+
+    .column3 {
+        margin-left: 15px;
+    }
+
+    .main-nosotros {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-nosotros img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer (1024px) */
+    .propiedades-footer {
+        background-color: #00000007;
+        font-size: 15px;
+    }
+
+    .footer-titulos {
+        margin-right: 10px;
+    }
+
+    .sucursales {
+        justify-content: start;
+    }
+
+    .horario {
+        justify-content: start;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .suc-linea {
+        display: none
+    }
+
+    .reservas {
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    .pago {
+        margin-bottom: 10px;
+    }
+
+    .sociales {
+        margin-left: 20px;
+    }
+
+    .sociales .footer-titulos {
+        display: none;
+    }
+}

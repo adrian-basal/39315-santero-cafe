@@ -1,0 +1,29 @@
+/* TIENDA (Main)*/
+.cabezal-tienda {
+    @include cabezales(url(../assets/img/cabezales/cabezal_tienda.png));
+}
+
+.tienda-grids {
+    display: grid;
+    font-family: 'arial';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+
+    .tienda {
+        background-color: #fff;
+    }
+
+    .card {
+        @include cards;
+    }
+
+    .boton-comprar {
+        @include boton-comprar;
+    }
+}

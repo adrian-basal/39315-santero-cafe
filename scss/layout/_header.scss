@@ -1,0 +1,51 @@
+ /*////// HEAD //////*/
+header {
+    font-family: $fuente-principal;
+    background-color: $color_secundario;
+    @include flex1(flex, none, none, space-evenly, center);
+    padding: 20px;
+
+    nav {
+        list-style: none;
+        gap: 30px;
+        text-transform: uppercase;
+        @include flex2(flex, center);
+        cursor: pointer;
+
+        input {
+            appearance: none;
+        }
+
+        label {
+            display: none;
+        }
+
+        li a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.login-cart {
+    @include flex2(flex, center);
+    gap: 20px;
+    list-style: none;
+
+    li {
+        a {
+            color: white;
+            font-size: 17px;
+            text-transform: uppercase;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}

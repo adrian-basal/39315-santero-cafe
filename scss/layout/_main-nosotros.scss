@@ -1,0 +1,14 @@
+/* NOSOTROS MAIN*/
+.cabezal-nosotros{
+    @include cabezales(url(../assets/img/cabezales/cabezal_nosotros.png));
+}
+
+.main-nosotros{
+    @include flex1(flex, none, none, space-evenly, center);
+    font-family: 'arial';
+    height: 500px;
+    margin: 40px;
+    gap: 40px
+}
+
+

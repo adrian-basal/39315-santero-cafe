@@ -1,0 +1,21 @@
+@import "./utilities/mixins.scss";
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./base/typo";
+
+@import "./layout/header";
+
+
+@import "./layout/main-home";
+@import "./layout/main-nosotros";
+@import "./layout/main-tienda";
+@import "./layout/main-locales";
+@import "./layout/main-contacto";
+
+@import "./layout/footer";
+
+@import "./layout/media1024";
+@import "./layout/media768";
+@import "./layout/media425";
+@import "./layout/media375";
+@import "./layout/media320";

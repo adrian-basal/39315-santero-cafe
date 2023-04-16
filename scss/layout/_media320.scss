@@ -1,0 +1,87 @@
+/******* RESPONSIVE MOBILE 320px*******/
+@media (max-width: 320px) {
+
+	/* Header (320px) */
+	header {
+		height: 100%;
+		align-items: center;
+	}
+
+	.login-cart {
+		display: none;
+	}
+
+	.linea-menu {
+		display: none;
+	}
+
+	.slide-texto1 {
+		font-size: 30px;
+		padding: 5%;
+	}
+
+	.slide-texto2 {
+		font-size: 16px;
+	}
+
+	.selec-slide {
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+		top: -100px;
+	}
+
+	/* Main (320px) */
+	.tienda-grids {
+		grid-template-columns: 1fr;
+	}
+
+	.card {
+		border: 1px solid #cacaca44;
+		padding: 15px;
+	}
+
+	.card img {
+		contain: content;
+	}
+
+	.container-main {
+		flex-direction: column;
+	}
+
+	/* Footer (320px) */
+	footer {
+		display: flex;
+	}
+
+	.propiedades-footer {
+		flex-direction: column;
+		background-color: #00000007;
+		font-size: 15px;
+	}
+
+	.footer-titulos {
+		margin-right: 10px;
+	}
+
+	.pago {
+		margin-bottom: 10px;
+	}
+
+	/* Menú responsive (320px) */
+	.logo {
+		margin-left: 70px;
+	}
+
+	.logo img {
+		width: 80%;
+	}
+}
+
+header nav {
+	gap: 0px;
+}
+
+footer .propiedades-footer .sucursales {
+	justify-content: start;
+}

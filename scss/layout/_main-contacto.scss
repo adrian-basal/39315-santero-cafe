@@ -1,0 +1,22 @@
+/* CONTACTO (Main)*/
+form {
+    margin-top: 20px;
+
+    input[type="submit"] {
+        background-color: $color_secundario;
+        color: #fff;
+        border: none;
+    }
+}
+
+.cabezal-contacto {
+    @include cabezales(url(../assets/img/cabezales/cabezal_contacto.png));
+}
+
+.main-contacto {
+    @include flex1(flex, none, none, space-evenly, center);
+    font-family: 'arial';
+    height: 500px;
+    margin: 40px 40px 20px 20px;
+    gap: 80px
+}

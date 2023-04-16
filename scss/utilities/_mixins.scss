@@ -1,0 +1,48 @@
+@mixin flex1($display, $direction, $warp, $justify, $align){
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $warp;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex2($display, $align){
+    display: $display;
+    align-items: $align;
+}
+
+@mixin texto($color, $zize, $transform, $align){
+    color: $color;
+    font-size: $zize; 
+    text-transform: $transform;
+	text-decoration: none;
+	list-style: none;
+    text-align: $align;
+}
+
+@mixin cabezales($image){
+background-color: $color_secundario;
+background-image: $image;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 150px;
+}
+
+@mixin boton-comprar(){
+color: #fff;
+font-family: $fuente-principal;
+font-weight:300;
+font-size: 18px;
+background-color: #000;
+margin: 10px 10px 0px 0px ;
+padding: 7px;
+border-radius: 5px;
+}
+
+@mixin cards(){
+background-color: #ffffff;
+border: 1px solid #83838344;
+padding: 20px;
+border-radius: 5px;
+}

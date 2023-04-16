@@ -1,0 +1,55 @@
+/*/////// FOOTER //////*/
+footer {
+    font-family: $fuente-principal;
+    background-color: rgba(128, 128, 128, 0.034);
+
+    .propiedades-footer {
+        @include flex1(flex, none, none, space-evenly, center);
+        padding: 30px;
+
+        .sucursales {
+            @include flex1(flex, none, none, space-evenly, center);
+            gap: 25px;
+
+            .suc-linea {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+.footer-titulos {
+    font-weight: bold;
+    @include texto($color_principal, 15px, uppercase, left);
+}
+
+.horario {
+    @include flex1(flex, column, none, none, none);
+}
+
+.pago,
+li {
+    @include flex1(flex, none, none, space-evenly, center);
+    gap: 5px;
+}
+
+.sociales {
+    @include flex1(flex, none, none, space-evenly, right);
+    gap: 10px;
+}
+
+/* COPYRIGHT */
+.copyright {
+    padding: 7px;
+    background-color: $color_secundario;
+
+    @include texto(rgb(255, 255, 255), 14px, uppercase, center);
+
+    .copyright-mail {
+        color: $color_principal;
+    }
+}

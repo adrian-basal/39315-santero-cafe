@@ -1,0 +1,28 @@
+/* Colores */
+$color_principal: #9B7D49;
+$color_secundario: #0C0C0C;
+
+/* Fuentes */
+$fuente-principal: 'Barlow', sans-serif;
+
+/* Fondo Main Café */
+main {
+    background-image: url(../assets/img/fdo_main.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/* Propiedades Cabezales */
+.slideshow-texto{
+    text-align: center;
+    width: 100%;
+    padding: 15%;
+    
+}
+
+.cabezal-sec-texto{
+    text-align: left;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
