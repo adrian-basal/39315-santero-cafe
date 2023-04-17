@@ -69,6 +69,8 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer; }
+    header nav .logo {
+      margin-right: 30px; }
     header nav input {
       appearance: none; }
     header nav label {
@@ -395,7 +397,7 @@ li {
 @media (max-width: 768px) {
   /* Header (768px) */
   .logo img {
-    width: 75%; }
+    width: 100%; }
   nav {
     gap: 0px; }
   nav ul a {
@@ -468,6 +470,7 @@ li {
   /* Menú responsive (425px) */
   .logo {
     margin-left: 100px;
+    width: 60%;
     height: 100%;
     margin-bottom: 10px; }
   nav .menu {
@@ -499,6 +502,12 @@ li {
     flex-wrap: wrap;
     gap: 0px;
     margin-bottom: -40px; } }
+
+header nav {
+  gap: 0px; }
+
+footer .propiedades-footer .sucursales {
+  justify-content: start; }
 
 /******* RESPONSIVE MOBILE 320px*******/
 @media (max-width: 320px) {
@@ -543,12 +552,7 @@ li {
     margin-bottom: 10px; }
   /* Menú responsive (320px) */
   .logo {
-    margin-left: 70px; }
+    margin-left: 70px;
+    width: 100%; }
   .logo img {
     width: 80%; } }
-
-header nav {
-  gap: 0px; }
-
-footer .propiedades-footer .sucursales {
-  justify-content: start; }

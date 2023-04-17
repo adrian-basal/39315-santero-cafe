@@ -44,6 +44,7 @@
     /* Menú responsive (425px) */
     .logo {
         margin-left: 100px;
+        width: 60%;
         height: 100%;
         margin-bottom: 10px;
     }
@@ -92,4 +93,12 @@
         gap: 0px;
         margin-bottom: -40px;
     }
+}
+
+header nav {
+	gap: 0px;
+}
+
+footer .propiedades-footer .sucursales {
+	justify-content: start;
 }

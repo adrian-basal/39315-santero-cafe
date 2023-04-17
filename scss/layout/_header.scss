@@ -4,14 +4,15 @@ header {
     background-color: $color_secundario;
     @include flex1(flex, none, none, space-evenly, center);
     padding: 20px;
-
-    nav {
+    nav{
         list-style: none;
         gap: 30px;
         text-transform: uppercase;
         @include flex2(flex, center);
         cursor: pointer;
-
+        .logo{
+            margin-right: 30px;
+        }
         input {
             appearance: none;
         }

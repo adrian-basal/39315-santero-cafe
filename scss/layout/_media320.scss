@@ -71,17 +71,10 @@
 	/* Menú responsive (320px) */
 	.logo {
 		margin-left: 70px;
+		width: 100%;
 	}
 
 	.logo img {
 		width: 80%;
 	}
-}
-
-header nav {
-	gap: 0px;
-}
-
-footer .propiedades-footer .sucursales {
-	justify-content: start;
 }
