@@ -42,11 +42,7 @@ header {
 
     li {
         a {
-            color: white;
-            font-size: 17px;
-            text-transform: uppercase;
-            text-decoration: none;
-            list-style: none;
+            @include texto(white, 17px, uppercase, none);
         }
     }
 }

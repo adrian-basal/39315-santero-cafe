@@ -1,5 +1,5 @@
 # Santero | Café
-Comision-39315-Basal - Pre entrega del proyecto
+Comision-39315-Basal - 3era entrega del proyecto
 
 El sitio está desarrollado para visualizarse en dispositivos móviles, tablet y desktop;
 320px / 425px / 768px / 1024px 
@@ -10,7 +10,7 @@ El sitio está desarrollado para visualizarse en dispositivos móviles, tablet y
 - Contacto: Flexbox + Bootstrap 
 
 Lenguaje utilizado:
-- HTML
-- CSS
+- HTML5
+- CSS (SASS)
 - Grid
 - Bootstrap

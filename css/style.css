@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* Colores */
-/* Fuentes */
 /* Fondo Main Café */
 main {
   background-image: url(../assets/img/fdo_main.png);
@@ -24,14 +22,6 @@ main {
   margin: 0;
   box-sizing: border-box; }
 
-/* aca va la fuente 
-
-@font-face {
-    font-family: "Texta";
-    src: url(../assets/TextaRegular.ttf) format('truetype');
-}
-
-*/
 /* H1 - H4 */
 h1 {
   font-family: "Barlow", sans-serif;
@@ -95,7 +85,8 @@ header {
     font-size: 17px;
     text-transform: uppercase;
     text-decoration: none;
-    list-style: none; }
+    list-style: none;
+    text-align: none; }
 
 /*////// MAIN //////*/
 /* HOME (Main)*/
