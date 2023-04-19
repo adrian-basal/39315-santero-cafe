@@ -5,6 +5,7 @@ El sitio está desarrollado para visualizarse en dispositivos móviles, tablet y
 320px / 425px / 768px / 1024px 
 
 
+- Home: Animación en texto "Cordón - Pocitos - Buceo"
 - Home, Nosotros, y Locales: Flexbox
 - Tienda: Flexbox + Grid
 - Contacto: Flexbox + Bootstrap 
@@ -14,3 +15,4 @@ Lenguaje utilizado:
 - CSS (SASS)
 - Grid
 - Bootstrap
+- SEO
