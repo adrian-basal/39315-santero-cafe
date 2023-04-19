@@ -17,6 +17,11 @@ main {
   display: flex;
   flex-direction: column; }
 
+/* Animación Menú */
+nav a:hover, .login-cart a:hover {
+  color: #9B7D49;
+  text-decoration: none; }
+
 * {
   padding: 0;
   margin: 0;

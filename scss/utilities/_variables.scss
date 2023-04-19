@@ -24,3 +24,8 @@ main {
     flex-direction: column;
 }
 
+/* Animación Menú */
+nav a:hover, .login-cart a:hover {
+    color: $color_principal;
+    text-decoration: none;
+}
