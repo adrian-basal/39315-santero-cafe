@@ -125,11 +125,6 @@ header {
     width: 100%;
     padding: 15%;
     font-family: "Barlow", sans-serif; }
-    .slideshow .slide-texto .slide-texto1 {
-      font-size: 40px; }
-      .slideshow .slide-texto .slide-texto1 .slide-texto2 {
-        font-weight: lighter;
-        font-size: 20px; }
 
 /* Flechas para slideshow */
 .selec-slide {
@@ -145,6 +140,35 @@ header {
 
 .column3 {
   margin-left: 20px; }
+
+/* ANIMACION TITULO SLIDE */
+.titulo {
+  position: relative;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(10%); }
+
+/*ANIMACION*/
+.anim-typewriter {
+  animation: typewriter 2s steps(24) 1s 1 normal both, blinkTextCursor 600ms steps(24) infinite normal; }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 13em; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
 
 /* NOSOTROS MAIN*/
 .cabezal-nosotros {
@@ -341,10 +365,8 @@ li {
     padding-left: 15px;
     padding-right: 15px; }
   /* Main (1024px) */
-  .slide-texto1 {
-    font-size: 35px; }
-  .slide-texto2 {
-    font-size: 20px; }
+  .titulo {
+    font-size: 110%; }
   .selec-slide {
     margin-left: 20px;
     margin-right: 20px;
@@ -439,6 +461,8 @@ li {
     display: none; }
   .linea-menu {
     display: none; }
+  .titulo {
+    font-size: 100%; }
   .selec-slide {
     top: -130px; }
   /* Main (425px) */
@@ -478,16 +502,16 @@ li {
     margin-bottom: 40px; }
   .menu ul {
     list-style: none;
-    gap: 5px; }
+    gap: 5px;
+    margin-top: -20px; }
   nav li a {
     font-size: 17px;
     text-transform: uppercase;
     text-decoration: none; }
   header nav label {
-    display: flex; }
-  header nav label {
+    display: flex;
     position: relative;
-    top: -55px;
+    top: -57px;
     margin-left: 15px; }
   nav {
     flex-wrap: wrap;
@@ -506,15 +530,14 @@ footer .propiedades-footer .sucursales {
   header {
     height: 100%;
     align-items: center; }
+    header nav label {
+      top: -50px; }
   .login-cart {
     display: none; }
   .linea-menu {
     display: none; }
-  .slide-texto1 {
-    font-size: 30px;
-    padding: 5%; }
-  .slide-texto2 {
-    font-size: 16px; }
+  .titulo {
+    font-size: 110%; }
   .selec-slide {
     margin-left: 10px;
     margin-right: 10px;

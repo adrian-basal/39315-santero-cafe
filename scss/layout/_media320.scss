@@ -5,6 +5,9 @@
 	header {
 		height: 100%;
 		align-items: center;
+		nav label{
+			top: -50px;
+		}
 	}
 
 	.login-cart {
@@ -15,13 +18,8 @@
 		display: none;
 	}
 
-	.slide-texto1 {
-		font-size: 30px;
-		padding: 5%;
-	}
-
-	.slide-texto2 {
-		font-size: 16px;
+	.titulo {
+		font-size: 110%;
 	}
 
 	.selec-slide {

@@ -10,6 +10,10 @@
         display: none;
     }
 
+    .titulo {
+		font-size: 100%;
+	}
+
     .selec-slide {
         top: -130px;
     }
@@ -70,6 +74,7 @@
     .menu ul {
         list-style: none;
         gap: 5px;
+        margin-top: -20px;
     }
 
     nav li a {
@@ -80,11 +85,8 @@
 
     header nav label {
         display: flex;
-    }
-
-    header nav label {
         position: relative;
-        top: -55px;
+        top: -57px;
         margin-left: 15px;
     }
 
