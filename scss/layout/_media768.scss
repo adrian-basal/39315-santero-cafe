@@ -11,18 +11,29 @@
     }
 
     nav ul a {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .menu ul {
         gap: 15px;
     }
-
-    /* Main (768px) */
-    .selec-slide {
-        top: -160px;
+    header nav li a{
+        font-size: 19px;
     }
 
+    .login-cart img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Main (768px) */
+
+    /* Slideshow */
+.slideshow {
+    .slide-texto {
+        top: 110px;
+    }
+}
     .tienda-grids {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
@@ -62,6 +73,8 @@
         object-fit: cover;
         width: 100%;
     }
+
+
 
     /* Footer */
     footer {

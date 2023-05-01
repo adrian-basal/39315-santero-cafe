@@ -3,8 +3,12 @@
 
     /* Header (1024px) */
     .logo img {
-        margin-top: 15px;
+        margin-top: 0px;
         width: 85%;
+    }
+
+    header nav .logo{
+        margin-right: 15px;
     }
 
     .nav-bar {
@@ -12,9 +16,9 @@
     }
 
     .nav ul li {
-        font-size: 18px;
+        font-size: 19px;
     }
-
+    
     .login-cart {
         padding-right: 15px;
         gap: 10px;
@@ -22,7 +26,7 @@
 
     .login-cart img {
         margin-top: 3px;
-        width: 100%;
+        width: 30px;
     }
 
     .login-cart li a {
@@ -32,19 +36,13 @@
     .linea-menu {
         padding-left: 15px;
         padding-right: 15px;
-    }
+        }
 
     /* Main (1024px) */
     .titulo {
 		font-size: 110%;
 	}
 
-    .selec-slide {
-        margin-left: 20px;
-        margin-right: 20px;
-        position: relative;
-        top: -200px;
-    }
 
     .column3 {
         margin-left: 15px;
@@ -60,6 +58,13 @@
         width: 100%;
         height: 100%;
     }
+
+/* Slideshow */
+.slideshow {
+    .slide-texto {
+        top: 150px;
+    }
+}
 
     /* Footer (1024px) */
     .propiedades-footer {
@@ -103,3 +108,4 @@
         display: none;
     }
 }
+

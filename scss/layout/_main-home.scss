@@ -11,34 +11,21 @@
         @include flex1(flex, none, none, space-evenly, center);
         width: 100%;
         align-content: center;
+        padding-bottom: 20px
     }
     
 }
 
 /* Slideshow */
 .slideshow {
-    background-color: #0C0C0C;
-    background-image: url(../assets/img/slideshow/slide-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
     .slide-texto {
         @include texto(white, none, none, center);
-        width: 100%;
-        padding: 15%;
+        height: 0px;
         font-family: $fuente-principal;
+        position: relative;
+        top: 210px;
+        z-index: 1;
     }
-}
-
-
-/* Flechas para slideshow */
-.selec-slide {
-    @include flex1(flex, none, none, space-between, center);
-    margin-left: 30px;
-    margin-right: 30px;
-    position: relative;
-    top: -250px;
 }
 
 .column3 {
@@ -80,4 +67,9 @@
     to {
           border-right-color: transparent;
     }
+}
+
+img,
+svg {
+  vertical-align: sub;
 }

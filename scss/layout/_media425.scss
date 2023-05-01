@@ -14,11 +14,19 @@
 		font-size: 100%;
 	}
 
-    .selec-slide {
-        top: -130px;
-    }
-
     /* Main (425px) */
+
+        /* Slideshow */
+.slideshow {
+    .slide-texto {
+        top: 15px;
+    }
+}
+
+.carousel-indicators{
+    display:none;
+}
+
     .tienda-grids {
         grid-template-columns: 1fr;
     }
@@ -100,6 +108,8 @@
 header nav {
 	gap: 0px;
 }
+
+
 
 footer .propiedades-footer .sucursales {
 	justify-content: start;

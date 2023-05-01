@@ -5,10 +5,12 @@
 	header {
 		height: 100%;
 		align-items: center;
-		nav label{
+
+		nav label {
 			top: -50px;
 		}
 	}
+
 
 	.login-cart {
 		display: none;
@@ -22,14 +24,23 @@
 		font-size: 110%;
 	}
 
-	.selec-slide {
-		margin-left: 10px;
-		margin-right: 10px;
-		position: relative;
-		top: -100px;
+	/* Main (320px) */
+    
+	/* Slideshow */
+	.slideshow {
+		.slide-texto {
+			top: 10px;
+		}
 	}
 
-	/* Main (320px) */
+	.w-100{
+		width: 120%!important;
+	}
+	
+	.carousel-indicators{
+		display:none;
+	}
+
 	.tienda-grids {
 		grid-template-columns: 1fr;
 	}
